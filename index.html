@@ -7,7 +7,6 @@
     <meta name="keywords" content="ABDL, Adult Baby, Diaper Lover, ABDL Shop, ABDL Shop Deutschland, ABDL Bodys, ABDL Windel-Boxershorts, ABDL Onesies, Windel Liebhaber, Diaper Minister, ABU Universe, Little, ABDL Zubehör, ABDL Bekleidung, SnugglePlanet, Pupstyle, ABDL T-Shirts, ABDL Hoodies, ABDL Beanies, ABDL Caps, ABDL Kuscheldecken, ABDL Schnuller, ABDL Tassen">
     <title>SnugglePlanet | ABDL | Bekleidung & Accessoires</title>
     <style>
-        /* Body and Background */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -22,12 +21,10 @@
             overflow: hidden;
             padding: 0 20px;
         }
-        /* Willkommenstext */
         .welcome-text {
             font-size: 1.8rem;
             margin-bottom: 20px;
         }
-        /* Logo Styling */
         .logo {
             width: 300px;
             height: auto;
@@ -44,13 +41,11 @@
                 transform: scale(1);
             }
         }
-        /* Weiterleitungstext */
         .redirect-text {
             font-size: 1.3rem;
             margin-bottom: 20px;
             line-height: 1.6;
         }
-        /* Spinner */
         .spinner {
             border: 8px solid rgba(255, 255, 255, 0.3);
             border-top: 8px solid #ffffff;
@@ -64,7 +59,6 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        /* Kleinerer Hinweis */
         .fallback-text {
             font-size: 0.9rem;
             margin-top: 10px;
@@ -73,7 +67,6 @@
             color: #ffccff;
             text-decoration: underline;
         }
-        /* Kategorien */
         .categories-section {
             margin-top: 20px;
             text-align: center;
@@ -83,18 +76,21 @@
             font-size: 1rem;
             margin-bottom: 10px;
         }
-        .categories {
+        .category-row {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 10px;
+            margin-bottom: 10px;
         }
         .category {
             background: rgba(255, 255, 255, 0.2);
             border-radius: 10px;
-            padding: 10px 15px;
+            padding: 8px 12px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             text-align: center;
+            flex: 0 0 auto;
+            white-space: nowrap;
         }
         .category a {
             color: #ffffff;
@@ -104,7 +100,6 @@
         .category a:hover {
             text-decoration: underline;
         }
-        /* Responsive Design */
         @media (max-width: 768px) {
             .logo {
                 width: 200px;
@@ -130,12 +125,14 @@
     </p>
     <div class="categories-section">
         <h3>Unsere Kategorien:</h3>
-        <div class="categories">
+        <!-- Erste Zeile nur "Alle Produkte" -->
+        <div class="category-row">
             <div class="category">
                 <a href="https://pupstyle.de/snuggleplanet">Alle Produkte</a>
             </div>
         </div>
-        <div class="categories">
+        <!-- Zweite Zeile mit weiteren Kategorien -->
+        <div class="category-row">
             <div class="category">
                 <a href="https://pupstyle.de/collections/abdl-customize">ABDL Customize</a>
             </div>
@@ -156,7 +153,7 @@
     <script>
         setTimeout(function() {
             window.location.href = "https://www.pupstyle.de/snuggleplanet";
-        }, 2000);
+        }, 5000);
     </script>
 </body>
 </html>
