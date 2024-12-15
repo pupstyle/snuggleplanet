@@ -16,15 +16,14 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: url('https://pupstyle.github.io/snuggleplanet/space-background.jpg') no-repeat center center fixed;
-            background-size: cover;
-            text-align: center;
+            background: linear-gradient(135deg, #1e1e60, #6a11cb);
             color: #ffffff;
+            text-align: center;
             overflow: hidden;
         }
         /* Logo Styling */
         .logo {
-            width: 200px;
+            width: 300px;
             height: auto;
             margin-bottom: 20px;
             animation: fadeInZoom 2s ease-in-out;
@@ -41,17 +40,22 @@
         }
         /* Weiterleitungstext */
         .redirect-text {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            padding: 0 20px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            max-width: 80%;
+        }
+        .redirect-text strong {
+            font-size: 1.8rem;
+            color: #ffccff;
         }
         /* Spinner */
         .spinner {
             border: 8px solid rgba(255, 255, 255, 0.3);
             border-top: 8px solid #ffffff;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             animation: spin 1s linear infinite;
             margin: 20px auto;
         }
@@ -94,10 +98,10 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             .logo {
-                width: 150px;
+                width: 200px;
             }
             .redirect-text {
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
             .category a {
                 font-size: 0.8rem;
@@ -107,7 +111,11 @@
 </head>
 <body>
     <img src="white.png" alt="SnugglePlanet Logo" class="logo">
-    <p class="redirect-text">Du wirst in wenigen Augenblicken automatisch weitergeleitet. Wir freuen uns, dich bei <strong>SnugglePlanet</strong> willkommen zu heißen!</p>
+    <p class="redirect-text">
+        Willkommen bei <strong>SnugglePlanet</strong>!<br>
+        Du wirst in wenigen Augenblicken automatisch weitergeleitet.<br>
+        Falls dies nicht funktioniert, <a href="https://www.pupstyle.de/snuggleplanet" style="color: #ffccff; text-decoration: underline;">klicke hier</a>.
+    </p>
     <div class="spinner"></div>
     <div class="categories-section">
         <h3>Unsere beliebtesten Kategorien:</h3>
@@ -132,7 +140,7 @@
     <script>
         setTimeout(function() {
             window.location.href = "https://www.pupstyle.de/snuggleplanet";
-        }, 1000);
+        }, 2000);
     </script>
 </body>
 </html>
