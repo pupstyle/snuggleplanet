@@ -6,122 +6,133 @@
     <meta name="description" content="SnugglePlanet by Pupstyle: Entdecke süße ABDL, Adult Baby, Diaper Lover-Produkte. Hochwertige Bodys / Onesies, Windel-Boxershorts, T-Shirts, Custom Produkte und mehr. Komfort und niedliche Designs perfekt kombiniert. Finde deine neuen Lieblingsstücke jetzt bei SnugglePlanet! Für Adult Baby, Diaper Lover, ABDL, Little">
     <meta name="keywords" content="ABDL, Adult Baby, Diaper Lover, ABDL Shop, ABDL Shop Deutschland, ABDL Bodys, ABDL Windel-Boxershorts, ABDL Onesies, Windel Liebhaber, Diaper Minister, ABU Universe, Little, ABDL Zubehör, ABDL Bekleidung, SnugglePlanet, Pupstyle, ABDL T-Shirts, ABDL Hoodies, ABDL Beanies, ABDL Caps, ABDL Kuscheldecken, ABDL Schnuller, ABDL Tassen">
     <title>SnugglePlanet | ABDL | Bekleidung & Accessoires</title>
-
-    <!-- Open Graph Meta-Tags -->
-    <meta property="og:title" content="SnugglePlanet | ABDL | Bekleidung & Accessoires">
-    <meta property="og:description" content="Entdecke süße ABDL-Produkte, Onesies, Windel-Boxershorts und mehr bei SnugglePlanet. Hochwertig und niedlich!">
-    <meta property="og:image" content="https://pupstyle.github.io/snuggleplanet/banner.jpg">
-    <meta property="og:url" content="https://www.snuggleplanet.de">
-    <meta property="og:type" content="website">
-
-    <!-- Twitter Card Meta-Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SnugglePlanet | ABDL | Bekleidung & Accessoires">
-    <meta name="twitter:description" content="Entdecke süße ABDL-Produkte, Onesies, Windel-Boxershorts und mehr bei SnugglePlanet. Hochwertig und niedlich!">
-    <meta name="twitter:image" content="https://pupstyle.github.io/snuggleplanet/banner.jpg">
-
-    <!-- Strukturierte Daten (Schema.org) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "SnugglePlanet",
-        "url": "https://www.snuggleplanet.de",
-        "description": "SnugglePlanet by Pupstyle: Entdecke süße ABDL, Adult Baby, Diaper Lover-Produkte. Hochwertige Bodys / Onesies, Windel-Boxershorts, T-Shirts, Custom Produkte und mehr.",
-        "image": "https://pupstyle.github.io/snuggleplanet/icon.jpg",
-        "publisher": {
-            "@type": "Organization",
-            "name": "SnugglePlanet",
-            "logo": "https://pupstyle.github.io/snuggleplanet/icon.jpg"
-        }
-    }
-    </script>
-
     <style>
+        /* Body and Background */
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
-            padding: 20px;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #ffffff;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            max-width: 80%;
-            line-height: 1.6;
-        }
-        .categories {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-        }
-        .category {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            padding: 15px 20px;
-            margin: 10px;
-            flex: 1 1 calc(30% - 20px);
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            max-width: 200px;
-        }
-        .category a {
-            color: #ffccff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .category a:hover {
+            height: 100vh;
+            background: url('https://pupstyle.github.io/snuggleplanet/space-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            text-align: center;
             color: #ffffff;
-            text-decoration: underline;
+            overflow: hidden;
         }
+        /* Logo Styling */
+        .logo {
+            width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: fadeInZoom 2s ease-in-out;
+        }
+        @keyframes fadeInZoom {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        /* Weiterleitungstext */
+        .redirect-text {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            padding: 0 20px;
+        }
+        /* Spinner */
         .spinner {
-            border: 6px solid rgba(255, 255, 255, 0.3); /* Transparent grey */
-            border-top: 6px solid #ffffff; /* White */
+            border: 8px solid rgba(255, 255, 255, 0.3);
+            border-top: 8px solid #ffffff;
             border-radius: 50%;
             width: 50px;
             height: 50px;
             animation: spin 1s linear infinite;
-            margin: 1.5rem auto;
+            margin: 20px auto;
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        /* Kategorien */
+        .categories-section {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        .categories-section h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .categories {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .category {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 10px 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .category a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .category a:hover {
+            text-decoration: underline;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .logo {
+                width: 150px;
+            }
+            .redirect-text {
+                font-size: 1rem;
+            }
+            .category a {
+                font-size: 0.8rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Willkommen bei SnugglePlanet</h1>
-    <p>Entdecke unsere Kategorien mit hochwertigen ABDL-Produkten:</p>
-    <div class="categories">
-        <div class="category"><a href="https://pupstyle.de/collections/abdl-customize">ABDL Customize</a></div>
-        <div class="category"><a href="https://pupstyle.de/collections/bodys">Bodys</a></div>
-        <div class="category"><a href="https://pupstyle.de/collections/abdl-bandanas">Bandanas</a></div>
-        <div class="category"><a href="https://pupstyle.de/collections/abdl-tshirts">T-Shirts</a></div>
-        <div class="category"><a href="https://pupstyle.de/collections/abdl-hoodies">Hoodies</a></div>
-        <div class="category"><a href="https://pupstyle.de/collections/abdl-boxershorts">Boxershorts</a></div>
-        <div class="category"><a href="https://pupstyle.de/collections/abdl-schnuller">Schnuller</a></div>
-        <div class="category"><a href="https://pupstyle.de/collections/abdl-caps">Caps</a></div>
-        <div class="category"><a href="https://pupstyle.de/collections/abdl-beanies">Beanies</a></div>
-        <div class="category"><a href="https://pupstyle.de/collections/abdl-kuscheldecken">Kuscheldecken</a></div>
-        <div class="category"><a href="https://pupstyle.de/collections/abdl-tassen-glaser">Tassen & Gläser</a></div>
-    </div>
+    <img src="white.png" alt="SnugglePlanet Logo" class="logo">
+    <p class="redirect-text">Du wirst in wenigen Augenblicken automatisch weitergeleitet. Wir freuen uns, dich bei <strong>SnugglePlanet</strong> willkommen zu heißen!</p>
     <div class="spinner"></div>
-    <p>Falls die Weiterleitung nicht funktioniert, <a href="https://www.pupstyle.de/snuggleplanet">klicke hier, um manuell zum Shop zu gelangen</a>.</p>
+    <div class="categories-section">
+        <h3>Unsere beliebtesten Kategorien:</h3>
+        <div class="categories">
+            <div class="category">
+                <a href="https://pupstyle.de/collections/abdl-customize">ABDL Customize</a>
+            </div>
+            <div class="category">
+                <a href="https://pupstyle.de/collections/bodys">Bodys</a>
+            </div>
+            <div class="category">
+                <a href="https://pupstyle.de/collections/abdl-bandanas">Bandanas</a>
+            </div>
+            <div class="category">
+                <a href="https://pupstyle.de/collections/abdl-tshirts">T-Shirts</a>
+            </div>
+            <div class="category">
+                <a href="https://pupstyle.de/collections/abdl-hoodies">Hoodies</a>
+            </div>
+        </div>
+    </div>
     <script>
         setTimeout(function() {
             window.location.href = "https://www.pupstyle.de/snuggleplanet";
-        }, 5000);
+        }, 1000);
     </script>
 </body>
 </html>
