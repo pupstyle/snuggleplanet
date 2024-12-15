@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SnugglePlanet by Pupstyle: Entdecke süße ABDL, Adult Baby, Diaper Lover-Produkte. Hochwertige Bodys / Onesies, Windel-Boxershorts, T-Shirts, Custom Produkte und mehr. Komfort und niedliche Designs perfekt kombiniert. Finde deine neuen Lieblingsstücke jetzt bei SnugglePlanet! Für Adult Baby, Diaper Lover, ABDL, Little">
-    <meta name="keywords" content="ABDL, Adult Baby, Diaper Lover, Onesies, Bodys, Windel-Boxershorts, Custom Produkte, SnugglePlanet">
+    <meta name="keywords" content="ABDL, Adult Baby, Diaper Lover, ABDL Shop, ABDL Shop Deutschland, ABDL Bodys, ABDL Windel-Boxershorts, ABDL Onesies, Windel Liebhaber, Diaper Minister, ABU Universe, Little, ABDL Zubehör, ABDL Bekleidung, SnugglePlanet, Pupstyle">
     <title>SnugglePlanet | ABDL | Bekleidung & Accessoires</title>
 
     <!-- Open Graph Meta-Tags -->
@@ -29,44 +29,63 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background: linear-gradient(135deg, #1e90ff, #87ceeb);
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: #ffffff;
             text-align: center;
             overflow: hidden;
         }
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
         }
         p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            max-width: 80%;
+            line-height: 1.6;
         }
         .spinner {
-            border: 8px solid #f3f3f3; /* Light grey */
-            border-top: 8px solid #ffffff; /* White */
+            border: 6px solid rgba(255, 255, 255, 0.3); /* Transparent grey */
+            border-top: 6px solid #ffffff; /* White */
             border-radius: 50%;
             width: 50px;
             height: 50px;
-            animation: spin 1.5s linear infinite;
-            margin: 0 auto 1rem;
+            animation: spin 1s linear infinite;
+            margin: 1.5rem auto;
+        }
+        .button {
+            display: inline-block;
+            background-color: #ff7eb3;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-decoration: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button:hover {
+            background-color: #ff5693;
+            transform: translateY(-3px);
         }
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
-        a {
-            color: #ffffff;
-            text-decoration: underline;
-            font-weight: bold;
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
     </style>
 </head>
 <body>
     <h1>Willkommen bei SnugglePlanet</h1>
-    <p>SnugglePlanet by Pupstyle bietet dir hochwertige Produkte für Adult Baby, Diaper Lover und ABDL-Enthusiasten.</p>
+    <p>SnugglePlanet by Pupstyle bietet dir hochwertige Produkte für Adult Baby, Diaper Lover und ABDL-Enthusiasten. Entdecke süße Onesies, Bodys und Windel-Boxershorts – dein ABDL-Shop in Deutschland!</p>
     <div class="spinner"></div>
-    <p>Du wirst in wenigen Sekunden weitergeleitet. Falls die Weiterleitung nicht funktioniert, <a href="https://www.pupstyle.de/snuggleplanet">klicke hier</a>.</p>
+    <a class="button" href="https://www.pupstyle.de/snuggleplanet">Jetzt Shoppen</a>
+    <p>Du wirst in wenigen Sekunden weitergeleitet. Falls die Weiterleitung nicht funktioniert, <a href="https://www.pupstyle.de/snuggleplanet" style="color: #ffccff; text-decoration: underline;">klicke hier</a>.</p>
     <script>
         setTimeout(function() {
             window.location.href = "https://www.pupstyle.de/snuggleplanet";
