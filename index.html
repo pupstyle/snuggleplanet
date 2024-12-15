@@ -21,6 +21,11 @@
             text-align: center;
             overflow: hidden;
         }
+        /* Willkommenstext */
+        .welcome-text {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
         /* Logo Styling */
         .logo {
             width: 300px;
@@ -40,14 +45,18 @@
         }
         /* Weiterleitungstext */
         .redirect-text {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             margin-bottom: 20px;
             line-height: 1.6;
-            max-width: 80%;
         }
-        .redirect-text strong {
-            font-size: 1.8rem;
+        /* Kleinerer Hinweis */
+        .fallback-text {
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        .fallback-text a {
             color: #ffccff;
+            text-decoration: underline;
         }
         /* Spinner */
         .spinner {
@@ -101,7 +110,7 @@
                 width: 200px;
             }
             .redirect-text {
-                font-size: 1.2rem;
+                font-size: 1rem;
             }
             .category a {
                 font-size: 0.8rem;
@@ -110,15 +119,22 @@
     </style>
 </head>
 <body>
+    <p class="welcome-text">Willkommen bei SnugglePlanet!</p>
     <img src="white.png" alt="SnugglePlanet Logo" class="logo">
     <p class="redirect-text">
-        Willkommen bei <strong>SnugglePlanet</strong>!<br>
-        Du wirst in wenigen Augenblicken automatisch weitergeleitet.<br>
-        Falls dies nicht funktioniert, <a href="https://www.pupstyle.de/snuggleplanet" style="color: #ffccff; text-decoration: underline;">klicke hier</a>.
+        Du wirst in wenigen Augenblicken automatisch weitergeleitet.
     </p>
     <div class="spinner"></div>
+    <p class="fallback-text">
+        Falls dies nicht funktioniert, <a href="https://www.pupstyle.de/snuggleplanet">klicke hier</a>.
+    </p>
     <div class="categories-section">
-        <h3>Unsere beliebtesten Kategorien:</h3>
+        <h3>Unsere Kategorien:</h3>
+        <div class="categories">
+            <div class="category">
+                <a href="https://pupstyle.de/snuggleplanet">Alle Produkte</a>
+            </div>
+        </div>
         <div class="categories">
             <div class="category">
                 <a href="https://pupstyle.de/collections/abdl-customize">ABDL Customize</a>
@@ -140,7 +156,7 @@
     <script>
         setTimeout(function() {
             window.location.href = "https://www.pupstyle.de/snuggleplanet";
-        }, 2000);
+        }, 5000);
     </script>
 </body>
 </html>
