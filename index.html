@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SnugglePlanet by Pupstyle: Entdecke süße ABDL, Adult Baby, Diaper Lover-Produkte. Hochwertige Bodys / Onesies, Windel-Boxershorts, T-Shirts, Custom Produkte und mehr. Komfort und niedliche Designs perfekt kombiniert. Finde deine neuen Lieblingsstücke jetzt bei SnugglePlanet! Für Adult Baby, Diaper Lover, ABDL, Little">
-    <meta name="keywords" content="ABDL, Adult Baby, Diaper Lover, ABDL Shop, ABDL Shop Deutschland, ABDL Bodys, ABDL Windel-Boxershorts, ABDL Onesies, Windel Liebhaber, Diaper Minister, ABU Universe, Little, ABDL Zubehör, ABDL Bekleidung, SnugglePlanet, Pupstyle, ABDL T-Shirts, ABDL Hoodies, ABDL Beanies, ABDL Caps, ABDL Kuscheldecken, ABDL Schnuller, ABDL Tassen">
+    <meta name="description" content="SnugglePlanet by PupStyle: Hochwertige ABDL-Produkte, einzigartige Designs und individuelle Custom-Artikel. Entdecke Bodys, Onesies, Windel-Boxershorts, T-Shirts, Hoodies und vieles mehr. Für Adult Baby, Diaper Lover, ABDL, Little mit liebevoller Verarbeitung, Komfort und Personalisierungsoptionen.">
+    <meta name="keywords" content="ABDL, Adult Baby, Diaper Lover, ABDL Shop, Bodys, Onesies, PupStyle, SnugglePlanet, Custom Produkte, einzigartige Designs, hochwertige Materialien, Individualisierung, Windel-Boxershorts, ABDL Hoodies, ABDL T-Shirts">
     <title>SnugglePlanet | ABDL | Bekleidung & Accessoires</title>
 
     <!-- Canonical URL -->
@@ -17,20 +17,18 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
             background: linear-gradient(135deg, #1e1e60, #6a11cb);
             color: #ffffff;
             text-align: center;
-            overflow: hidden;
-            padding: 0 20px;
+            padding: 20px;
+            min-height: 100vh;
         }
         .welcome-text {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            margin: 20px 0;
         }
         .logo {
-            width: 300px;
+            width: 250px;
             height: auto;
             margin-bottom: 20px;
             animation: fadeInZoom 2s ease-in-out;
@@ -45,23 +43,37 @@
                 transform: scale(1);
             }
         }
-        .redirect-text {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
+        .intro-text {
+            max-width: 700px;
             line-height: 1.6;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-align: left;
         }
-        .spinner {
-            border: 8px solid rgba(255, 255, 255, 0.3);
-            border-top: 8px solid #ffffff;
-            border-radius: 50%;
-            width: 60px;
-            height: 60px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
+        .intro-text h2 {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+        .intro-text h3 {
+            font-size: 1.3rem;
+            margin-top: 15px;
+            margin-bottom: 8px;
+        }
+        .go-shop-button {
+            display: inline-block;
+            background: #ff69b4;
+            color: #ffffff;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+            margin: 20px 0;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease;
+        }
+        .go-shop-button:hover {
+            background: #ff85c9;
         }
         .fallback-text {
             font-size: 0.9rem;
@@ -72,12 +84,11 @@
             text-decoration: underline;
         }
         .categories-section {
-            margin-top: 20px;
-            text-align: center;
+            margin-top: 30px;
             width: 100%;
         }
         .categories-section h3 {
-            font-size: 1rem;
+            font-size: 1.1rem;
             margin-bottom: 10px;
         }
         .category-row {
@@ -91,7 +102,7 @@
             background: rgba(255, 255, 255, 0.2);
             border-radius: 10px;
             padding: 8px 12px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
             text-align: center;
             flex: 0 0 auto;
             white-space: nowrap;
@@ -106,10 +117,13 @@
         }
         @media (max-width: 768px) {
             .logo {
-                width: 200px;
+                width: 150px;
             }
-            .redirect-text {
+            .intro-text {
                 font-size: 1rem;
+            }
+            .go-shop-button {
+                font-size: 0.9rem;
             }
             .category a {
                 font-size: 0.8rem;
@@ -119,14 +133,30 @@
 </head>
 <body>
     <p class="welcome-text">Willkommen bei</p>
-    <img src="white.png" alt="Logo" class="logo">
-    <p class="redirect-text">
-        Du wirst in wenigen Augenblicken automatisch weitergeleitet.
-    </p>
-    <div class="spinner"></div>
-    <p class="fallback-text">
-        Falls dies nicht funktioniert, <a href="https://www.pupstyle.de/snuggleplanet">klicke hier</a>.
-    </p>
+    <img src="white.png" alt="SnugglePlanet Logo" class="logo">
+
+    <div class="intro-text">
+        <h2>SnugglePlanet – Eine Marke von PupStyle</h2>
+        <p>SnugglePlanet ist Teil der renommierten Marke PupStyle und steht für hochwertige ABDL-Bekleidung und Accessoires. Unser Sortiment richtet sich an Adult Baby-, Diaper Lover- und Little-Communities, aber auch an alle, die auf der Suche nach außergewöhnlichem Tragekomfort und liebevollen Designs sind.</p>
+
+        <h3>Hochwertige Materialien & Einzigartige Designs</h3>
+        <p>Jedes SnugglePlanet-Produkt wird mit größter Sorgfalt aus ausgesuchten, langlebigen Materialien gefertigt. Unsere Bodys, Onesies, Windel-Boxershorts, T-Shirts und Hoodies verbinden Qualität mit Stil und Funktionalität. Die weichen Stoffe und detailverliebten Muster machen jedes Stück zu einem echten Lieblingsstück, das sich angenehm auf der Haut anfühlt.</p>
+
+        <h3>Besondere Custom-Produkte mit deinem Namen</h3>
+        <p>Suchst du etwas wirklich Individuelles? Mit unseren Custom-Produkten kannst du deinem Outfit eine persönliche Note verleihen. Lasse deinen Namen oder einen liebevollen Spitznamen auf dein neues Lieblingsstück drucken. So erhältst du ein Unikat, das genau zu deinem Stil und Charakter passt.</p>
+
+        <h3>Für Adult Baby, Diaper Lover, ABDL, Little und mehr</h3>
+        <p>SnugglePlanet bietet Bekleidung und Accessoires für verschiedene Vorlieben und Bedürfnisse. Ob niedliche Motive, verspielte Prints oder dezente Farbpaletten – hier findest du für jeden Geschmack das passende Design. Gönne dir den Komfort und die Qualität, die du verdienst, und fühle dich in deiner Haut rundum wohl.</p>
+
+        <p>Entdecke jetzt unser vielseitiges Sortiment und lass dich von unseren einmaligen Angeboten überzeugen. Egal ob du deine Sammlung erweitern oder ein besonderes Geschenk machen möchtest: SnugglePlanet ist deine Anlaufstelle für hochwertige, liebevoll gestaltete ABDL-Bekleidung.</p>
+    </div>
+
+    <a class="go-shop-button" href="https://www.pupstyle.de/snuggleplanet">Zum Shop</a>
+
+    <div class="fallback-text">
+        Falls der Link nicht funktioniert, kannst du direkt in deinem Browser<br>
+        <a href="https://www.pupstyle.de/snuggleplanet">https://www.pupstyle.de/snuggleplanet</a> aufrufen.
+    </div>
 
     <div class="categories-section">
         <h3>Unsere Kategorien:</h3>
@@ -153,12 +183,5 @@
             </div>
         </div>
     </div>
-
-    <script>
-        setTimeout(function() {
-            // Einmalige Weiterleitung, keine Schleife
-            window.location.href = "https://www.pupstyle.de/snuggleplanet";
-        }, 2000);
-    </script>
 </body>
 </html>
