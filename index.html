@@ -25,7 +25,8 @@
         }
         .welcome-text {
             font-size: 2rem;
-            margin: 20px 0;
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .logo {
             width: 250px;
@@ -42,6 +43,22 @@
                 opacity: 1;
                 transform: scale(1);
             }
+        }
+        .go-shop-button {
+            display: inline-block;
+            background: #ff69b4;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .go-shop-button:hover {
+            background: #ff85c9;
+            transform: translateY(-3px);
         }
         .intro-text {
             max-width: 700px;
@@ -60,21 +77,7 @@
             margin-top: 15px;
             margin-bottom: 8px;
         }
-        .go-shop-button {
-            display: inline-block;
-            background: #ff69b4;
-            color: #ffffff;
-            padding: 0.8rem 1.5rem;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1rem;
-            margin: 20px 0;
-            box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-            transition: background-color 0.3s ease;
-        }
-        .go-shop-button:hover {
-            background: #ff85c9;
-        }
+
         .fallback-text {
             font-size: 0.9rem;
             margin-top: 10px;
@@ -119,11 +122,12 @@
             .logo {
                 width: 150px;
             }
+            .go-shop-button {
+                font-size: 1rem;
+                padding: 0.8rem 1.5rem;
+            }
             .intro-text {
                 font-size: 1rem;
-            }
-            .go-shop-button {
-                font-size: 0.9rem;
             }
             .category a {
                 font-size: 0.8rem;
@@ -135,23 +139,23 @@
     <p class="welcome-text">Willkommen bei</p>
     <img src="white.png" alt="SnugglePlanet Logo" class="logo">
 
+    <a class="go-shop-button" href="https://www.pupstyle.de/snuggleplanet">Zum Shop</a>
+
     <div class="intro-text">
         <h2>SnugglePlanet – Eine Marke von PupStyle</h2>
-        <p>SnugglePlanet ist Teil der renommierten Marke PupStyle und steht für hochwertige ABDL-Bekleidung und Accessoires. Unser Sortiment richtet sich an Adult Baby-, Diaper Lover- und Little-Communities, aber auch an alle, die auf der Suche nach außergewöhnlichem Tragekomfort und liebevollen Designs sind.</p>
+        <p>SnugglePlanet steht für hochwertige ABDL-Bekleidung und Accessoires, die speziell auf die Bedürfnisse von Adult Baby-, Diaper Lover- und Little-Communities zugeschnitten sind. Als Teil der renommierten Marke PupStyle legen wir höchsten Wert auf Qualität, Komfort und ein liebevolles Design, das dich rundum begeistern wird.</p>
 
         <h3>Hochwertige Materialien & Einzigartige Designs</h3>
-        <p>Jedes SnugglePlanet-Produkt wird mit größter Sorgfalt aus ausgesuchten, langlebigen Materialien gefertigt. Unsere Bodys, Onesies, Windel-Boxershorts, T-Shirts und Hoodies verbinden Qualität mit Stil und Funktionalität. Die weichen Stoffe und detailverliebten Muster machen jedes Stück zu einem echten Lieblingsstück, das sich angenehm auf der Haut anfühlt.</p>
+        <p>Unsere Bodys, Onesies, Windel-Boxershorts, T-Shirts und Hoodies werden aus sorgfältig ausgewählten Materialien gefertigt. Die Stoffe sind angenehm weich, strapazierfähig und sorgen für ein rundum Wohlfühlerlebnis. Mit niedlichen Motiven, verspielten Prints und einzigartigen Designs findest du hier Kleidungsstücke, die nicht nur bequem sind, sondern auch deinen individuellen Stil unterstreichen.</p>
 
-        <h3>Besondere Custom-Produkte mit deinem Namen</h3>
-        <p>Suchst du etwas wirklich Individuelles? Mit unseren Custom-Produkten kannst du deinem Outfit eine persönliche Note verleihen. Lasse deinen Namen oder einen liebevollen Spitznamen auf dein neues Lieblingsstück drucken. So erhältst du ein Unikat, das genau zu deinem Stil und Charakter passt.</p>
+        <h3>Individuelle Custom-Produkte mit deinem Namen</h3>
+        <p>Möchtest du ein ganz persönliches Unikat? Unsere Custom-Produkte bieten dir die Möglichkeit, dein neues Lieblingsstück mit deinem Namen oder einem liebevollen Spitznamen zu versehen. Damit erhältst du ein Kleidungsstück, das so einzigartig ist wie du selbst.</p>
 
-        <h3>Für Adult Baby, Diaper Lover, ABDL, Little und mehr</h3>
-        <p>SnugglePlanet bietet Bekleidung und Accessoires für verschiedene Vorlieben und Bedürfnisse. Ob niedliche Motive, verspielte Prints oder dezente Farbpaletten – hier findest du für jeden Geschmack das passende Design. Gönne dir den Komfort und die Qualität, die du verdienst, und fühle dich in deiner Haut rundum wohl.</p>
+        <h3>Für Adult Baby, Diaper Lover, ABDL, Little und alle, die Komfort lieben</h3>
+        <p>SnugglePlanet macht es möglich, dich genau so auszudrücken, wie du es möchtest. Egal ob du deine Sammlung an ABDL-Bekleidung erweitern, ein besonderes Geschenk machen oder einfach etwas Bequemes für dich selbst suchst – bei uns findest du garantiert etwas Passendes. Jeder Artikel vereint Komfort, Qualität und ein Design, das Spaß macht.</p>
 
-        <p>Entdecke jetzt unser vielseitiges Sortiment und lass dich von unseren einmaligen Angeboten überzeugen. Egal ob du deine Sammlung erweitern oder ein besonderes Geschenk machen möchtest: SnugglePlanet ist deine Anlaufstelle für hochwertige, liebevoll gestaltete ABDL-Bekleidung.</p>
+        <p>Entdecke jetzt unsere vielfältige Auswahl und überzeuge dich selbst von unseren hochwertigen Produkten. Mit SnugglePlanet investierst du in Bekleidung, die nicht nur funktional ist, sondern auch ein Lächeln auf dein Gesicht zaubert.</p>
     </div>
-
-    <a class="go-shop-button" href="https://www.pupstyle.de/snuggleplanet">Zum Shop</a>
 
     <div class="fallback-text">
         Falls der Link nicht funktioniert, kannst du direkt in deinem Browser<br>
